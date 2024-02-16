@@ -160,4 +160,107 @@ f.math(value1: 3, value2: 5, operating: "sum")
 let sum = f.add(value1: 5, value2: 8)
 print("Sum = \(sum)")
 
-let namemulti = f.multiply(value1: 2.0, value2: 4.0, name: "Benjamin")
+let nameMulti = f.multiply(value1: 2.0, value2: 4.0, name: "Benjamin")
+
+
+
+
+// // Static Variable and Methods   -------------------------------
+
+
+class ClassA {
+    
+    static var x = 10
+    
+    static func method(){
+        print("method was worked")
+    }
+}
+
+let call = ClassA()
+
+//// bu kodlar static olmadan çalışan halleri
+//print(call.x)
+//call.method()
+//print(ClassA().x) // virtual Object  - Sanal nesne - isimsiz nesne
+//ClassA().method()
+
+
+print(ClassA.x) // static Object - statik nesne Yani parantezsiz halde ulaşabildik
+ClassA.method()
+
+
+
+// // Enumeration   -------------------------------------------------
+
+enum KonserveBoyut {
+    case small
+    case medium
+    case large
+}
+
+func priceCalculate (size:KonserveBoyut, piece:Int){
+    switch size {
+    case KonserveBoyut.small: print ("Price : \(piece * 13) $")
+    case KonserveBoyut.medium: print ("Price : \(piece * 24) $")
+    case KonserveBoyut.large: print ("Price : \(piece * 45) $")
+    }
+}
+
+priceCalculate(size: .medium, piece: 100)
+
+
+
+// // Composition   -------------------------------------------------
+
+class Categories {
+    var category_id:Int?
+    var category_name:String?
+    
+    init(category_id:Int, category_name:String){
+        self.category_id = category_id
+        self.category_name = category_name
+    }
+}
+
+class Directors {
+    var director_id:Int?
+    var director_name:String?
+    
+    init(director_id:Int, director_name:String){
+        self.director_id = director_id
+        self.director_name = director_name
+    }
+}
+
+class Films {
+    var film_id:Int?
+    var film_name:String?
+    var film_year:Int?
+    var category:Categories?
+    var director:Directors?
+    
+    init(film_id:Int, film_name:String, film_year:Int, category:Categories, director:Directors){
+        self.film_id = film_id
+        self.film_name = film_name
+        self.film_year = film_year
+        self.category = category
+        self.director = director
+    }
+}
+
+
+let category1 = Categories(category_id: 1, category_name: "Drama")
+let category2 = Categories(category_id: 2, category_name: "Comedy")
+let category3 = Categories(category_id: 3, category_name: "Science Fiction")
+
+let director1 = Directors(director_id: 1, director_name: "Nuri Bilge Ceylan")
+let director2 = Directors(director_id: 2, director_name: "Quetin Tarantino")
+let director3 = Directors(director_id: 3, director_name: "Christopher Nolan")
+
+let film1 = Films(film_id: 1, film_name: "Django", film_year: 2013, category: category1, director: director2)
+print("Film id       : \(film1.film_id!)")
+print("Film name     : \(film1.film_name!)")
+print("Film year     : \(film1.film_year!)")
+print("Film category : \(film1.category!.category_name!)")
+print("Film director : \(film1.director!.director_name!)")
