@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xB2-cy-4yW">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FirstAppInBootcamp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beef Cheese" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pVy-YA-bYr">
+                                <rect key="frame" x="57" y="103" width="279" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="59" id="2yP-4m-JG7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="foodPicture" translatesAutoresizingMaskIntoConstraints="NO" id="83k-tM-9Tw">
+                                <rect key="frame" x="76" y="196" width="241" height="166.66666666666663"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="sNP-Qh-28h">
+                                <rect key="frame" x="41" y="430" width="311" height="34.333333333333314"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eWw-7Q-3cR">
+                                        <rect key="frame" x="0.0" y="0.0" width="90.333333333333329" height="34.333333333333336"/>
+                                        <color key="tintColor" name="textColor1"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Pepper" cornerStyle="dynamic">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" name="mainColor"/>
+                                            </backgroundConfiguration>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NW6-eK-IGX">
+                                        <rect key="frame" x="110.33333333333334" y="0.0" width="90.333333333333343" height="34.333333333333336"/>
+                                        <color key="tintColor" name="textColor1"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Cheese" cornerStyle="dynamic">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" name="mainColor"/>
+                                            </backgroundConfiguration>
+                                            <attributedString key="attributedSubtitle"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rmg-yg-Qeh">
+                                        <rect key="frame" x="220.66666666666671" y="0.0" width="90.333333333333343" height="34.333333333333336"/>
+                                        <color key="tintColor" name="textColor1"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Sousage" cornerStyle="fixed">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" name="mainColor"/>
+                                            </backgroundConfiguration>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20 Min" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MZn-l6-1fR">
+                                <rect key="frame" x="161.33333333333334" y="482" width="70.333333333333343" height="26.333333333333314"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" name="textColor2"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delivery" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DEz-2j-ZlG">
+                                <rect key="frame" x="154.33333333333334" y="524.33333333333337" width="84.333333333333343" height="26.333333333333371"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" name="mainColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meat lover, get ready to meet your pizza !" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hjt-cW-OoF">
+                                <rect key="frame" x="32" y="566.66666666666663" width="329" height="51.333333333333371"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                <color key="textColor" name="textColor2"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 10.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sF0-LD-qst">
+                                <rect key="frame" x="15.999999999999993" y="740.33333333333337" width="110.33333333333331" height="45.666666666666629"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="38"/>
+                                <color key="textColor" name="mainColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1LJ-CR-G4u">
+                                <rect key="frame" x="243.33333333333337" y="746" width="133.66666666666663" height="34.333333333333371"/>
+                                <color key="tintColor" name="textColor1"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="ADD TO CART" cornerStyle="dynamic">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" name="mainColor"/>
+                                    </backgroundConfiguration>
+                                    <attributedString key="attributedSubtitle"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sF0-LD-qst" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="7Vf-Fa-wXq"/>
+                            <constraint firstItem="DEz-2j-ZlG" firstAttribute="centerX" secondItem="MZn-l6-1fR" secondAttribute="centerX" id="AsO-GV-yic"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sF0-LD-qst" secondAttribute="bottom" constant="32" id="K1g-ue-SWx"/>
+                            <constraint firstItem="hjt-cW-OoF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="P2J-2z-not"/>
+                            <constraint firstItem="MZn-l6-1fR" firstAttribute="top" secondItem="sNP-Qh-28h" secondAttribute="bottom" constant="17.670000000000002" id="QjO-IM-yfq"/>
+                            <constraint firstItem="pVy-YA-bYr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="57" id="VHU-ho-W9T"/>
+                            <constraint firstItem="sNP-Qh-28h" firstAttribute="top" secondItem="83k-tM-9Tw" secondAttribute="bottom" constant="67.329999999999998" id="XXN-fj-Uwe"/>
+                            <constraint firstItem="83k-tM-9Tw" firstAttribute="centerX" secondItem="sNP-Qh-28h" secondAttribute="centerX" id="Y8H-bG-W5Y"/>
+                            <constraint firstItem="sNP-Qh-28h" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="b0c-eW-1zd"/>
+                            <constraint firstItem="sNP-Qh-28h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="41" id="bIB-fa-gyd"/>
+                            <constraint firstItem="hjt-cW-OoF" firstAttribute="top" secondItem="DEz-2j-ZlG" secondAttribute="bottom" constant="16" id="cSJ-DT-WmD"/>
+                            <constraint firstItem="DEz-2j-ZlG" firstAttribute="top" secondItem="MZn-l6-1fR" secondAttribute="bottom" constant="16" id="ffu-da-NtY"/>
+                            <constraint firstItem="pVy-YA-bYr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="gOR-Gb-S1e"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hjt-cW-OoF" secondAttribute="trailing" constant="32" id="k93-MO-YV6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1LJ-CR-G4u" secondAttribute="trailing" constant="16" id="mUn-NG-R6f"/>
+                            <constraint firstItem="83k-tM-9Tw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="76" id="mgD-0Y-Ona"/>
+                            <constraint firstItem="83k-tM-9Tw" firstAttribute="centerX" secondItem="pVy-YA-bYr" secondAttribute="centerX" id="nPt-fN-PmU"/>
+                            <constraint firstItem="1LJ-CR-G4u" firstAttribute="centerY" secondItem="sF0-LD-qst" secondAttribute="centerY" id="nha-Wn-RLv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sNP-Qh-28h" secondAttribute="trailing" constant="41" id="wR8-oq-Gqa"/>
+                            <constraint firstItem="MZn-l6-1fR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yo1-Zk-W3m"/>
+                            <constraint firstItem="83k-tM-9Tw" firstAttribute="top" secondItem="pVy-YA-bYr" secondAttribute="bottom" constant="34" id="zZ6-TZ-Kle"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="KmN-aY-34v"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1040.4580152671756" y="-27.464788732394368"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="HUo-lA-kJ6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xB2-cy-4yW" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DEm-iT-csi">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="MYH-oU-tmi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZNE-9Y-wUR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="113.74045801526717" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="foodPicture" width="166.66667175292969" height="166.66667175292969"/>
+        <namedColor name="mainColor">
+            <color red="1" green="0.17200000584125519" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="textColor1">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="textColor2">
+            <color red="0.37700000405311584" green="0.37599998712539673" blue="0.38699999451637268" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
