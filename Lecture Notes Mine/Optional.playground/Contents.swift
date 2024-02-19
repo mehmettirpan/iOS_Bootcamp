@@ -4,7 +4,7 @@ import UIKit
 
 var message = "Hello"
 // null, nil
-var str: String? // bu soru işareti str boş olabilir ona göre kodlama yap diyor aslında optionalolan değer oradaki soru işareti.
+var str: String? // bu soru işareti str boş olabilir ona göre kodlama yap diyor aslında optional olan değer oradaki soru işareti.
 
 str = "hello"
 if str != nil { //, yani optional mı diye bakıyor ve sonuçta değilse yanında optional yazıyor.

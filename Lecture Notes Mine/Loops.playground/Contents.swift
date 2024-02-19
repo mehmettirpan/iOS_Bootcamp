@@ -2,7 +2,7 @@ import UIKit
 
 // 1,2,3
 
-for i in 1...3{ // burada 1 den başlayıp 3 e kadar gidecceğini belirtiyor
+for i in 1...3{ // burada 1 den başlayıp 3 e kadar gideceğini belirtiyor
     print ("Loop \(i): \(i)")
 }
 
