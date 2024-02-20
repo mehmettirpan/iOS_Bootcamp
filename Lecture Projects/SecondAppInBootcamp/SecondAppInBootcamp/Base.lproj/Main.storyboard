@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -52,7 +53,22 @@
                             <constraint firstItem="06e-AW-tJU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="101" id="u65-Tq-WRZ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="lcK-DJ-a1b"/>
+                    <navigationItem key="navigationItem" id="lcK-DJ-a1b">
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="add" id="nAY-sQ-WDA">
+                                <color key="tintColor" name="AccentColor"/>
+                                <connections>
+                                    <action selector="addButton:" destination="BYZ-38-t0r" id="zDS-pn-AWm"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Save" id="UGf-nr-901">
+                                <color key="tintColor" name="AccentColor"/>
+                                <connections>
+                                    <action selector="saveButton:" destination="BYZ-38-t0r" id="6j9-hv-mhd"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
                     <connections>
                         <outlet property="mainScreenLabel" destination="06e-AW-tJU" id="ZsJ-Se-w8m"/>
                         <segue destination="BrV-Cp-ntD" kind="show" identifier="toGameScreen" id="Bcp-kg-vM0"/>
@@ -180,6 +196,9 @@
         </scene>
     </scenes>
     <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
