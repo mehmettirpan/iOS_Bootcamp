@@ -12,7 +12,8 @@ class SettingsVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.navigationItem.title = "Settings"
+        let appearance = UINavigationBarAppearance()
     }
     
 
