@@ -1,5 +1,7 @@
 This application  basic contacts app same image but this is not contacts app
+
 TR- Bu kodlama derisnde kullanılan fonksiyonların başlıcaları şunlardır;
+
 EN- The main functions used in this coding leather are;
 
 * viewdidload
