@@ -16,6 +16,7 @@
 		026F41442B9B58DA00BA5074 /* SavePerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026F41432B9B58DA00BA5074 /* SavePerson.swift */; };
 		026F41462B9B58F200BA5074 /* DetailPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026F41452B9B58F200BA5074 /* DetailPerson.swift */; };
 		026F41482B9B59A900BA5074 /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026F41472B9B59A900BA5074 /* Contacts.swift */; };
+		026F414D2B9BC97B00BA5074 /* ContactsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026F414C2B9BC97B00BA5074 /* ContactsCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		026F41432B9B58DA00BA5074 /* SavePerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavePerson.swift; sourceTree = "<group>"; };
 		026F41452B9B58F200BA5074 /* DetailPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPerson.swift; sourceTree = "<group>"; };
 		026F41472B9B59A900BA5074 /* Contacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
+		026F414C2B9BC97B00BA5074 /* ContactsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 		026F41402B9B585800BA5074 /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				026F414B2B9BC95500BA5074 /* tableView */,
 				026F41422B9B589900BA5074 /* views */,
 			);
 			path = ui;
@@ -106,6 +109,14 @@
 				026F41452B9B58F200BA5074 /* DetailPerson.swift */,
 			);
 			path = views;
+			sourceTree = "<group>";
+		};
+		026F414B2B9BC95500BA5074 /* tableView */ = {
+			isa = PBXGroup;
+			children = (
+				026F414C2B9BC97B00BA5074 /* ContactsCell.swift */,
+			);
+			path = tableView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +196,7 @@
 				026F41442B9B58DA00BA5074 /* SavePerson.swift in Sources */,
 				026F412D2B9B580700BA5074 /* SceneDelegate.swift in Sources */,
 				026F41462B9B58F200BA5074 /* DetailPerson.swift in Sources */,
+				026F414D2B9BC97B00BA5074 /* ContactsCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
