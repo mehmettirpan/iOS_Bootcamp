@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "bf7725dc43996c73dc5d1cbccfadb5d4_Calculator_32x32x32.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "bf7725dc43996c73dc5d1cbccfadb5d4_Calculator_512x512x32.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "bf7725dc43996c73dc5d1cbccfadb5d4_Calculator_256x256x32.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
