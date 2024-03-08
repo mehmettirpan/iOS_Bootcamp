@@ -117,25 +117,25 @@ class ViewController: UIViewController {
     
     @IBAction func sumButton(_ sender: Any) {
         operation = "+"
-        preNumber = Double(resultLabel.text!)!
+        preNumber += Double(resultLabel.text!)!
         resultLabel.text = "0"
     }
     
     @IBAction func subButton(_ sender: Any) {
         operation = "-"
-        preNumber = Double(resultLabel.text!)!
+        preNumber -= Double(resultLabel.text!)!
         resultLabel.text = "0"
     }
     
     @IBAction func multiplyButton(_ sender: Any) {
         operation = "x"
-        preNumber = Double(resultLabel.text!)!
+        preNumber *= Double(resultLabel.text!)!
         resultLabel.text = "0"
     }
     
     @IBAction func partitionButton(_ sender: Any) {
         operation = "/"
-        preNumber = Double(resultLabel.text!)!
+        preNumber /= Double(resultLabel.text!)!
         resultLabel.text = "0"
     }
     
