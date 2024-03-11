@@ -28,7 +28,7 @@ class ProductsCell: UITableViewCell {
     var indexPath:IndexPath?
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        labelProductName.textColor = UIColor(named: "textColor")
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
