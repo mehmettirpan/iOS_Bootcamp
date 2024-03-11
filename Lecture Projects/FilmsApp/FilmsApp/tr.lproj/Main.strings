@@ -1,0 +1,18 @@
+
+/* Class = "UIButton"; configuration.title = "Add to Cart"; ObjectID = "AW8-Ku-rYb"; */
+"AW8-Ku-rYb.configuration.title" = "Sepete Ekle";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "AW8-Ku-rYb"; */
+"AW8-Ku-rYb.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "24₺"; ObjectID = "EJ5-PV-ZV0"; */
+"EJ5-PV-ZV0.text" = "24₺";
+
+/* Class = "UINavigationItem"; title = "Films"; ObjectID = "fhm-uq-HtN"; */
+"fhm-uq-HtN.title" = "Filmler";
+
+/* Class = "UILabel"; text = "DJANGO"; ObjectID = "ngm-bu-8Un"; */
+"ngm-bu-8Un.text" = "DJANGO";
+
+/* Class = "UILabel"; text = "24₺"; ObjectID = "sFU-Hj-qPX"; */
+"sFU-Hj-qPX.text" = "24₺";
