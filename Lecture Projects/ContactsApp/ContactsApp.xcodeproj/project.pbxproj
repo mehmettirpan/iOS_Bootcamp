@@ -17,6 +17,15 @@
 		026F41462B9B58F200BA5074 /* DetailPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026F41452B9B58F200BA5074 /* DetailPerson.swift */; };
 		026F41482B9B59A900BA5074 /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026F41472B9B59A900BA5074 /* Contacts.swift */; };
 		026F414D2B9BC97B00BA5074 /* ContactsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026F414C2B9BC97B00BA5074 /* ContactsCell.swift */; };
+		029F27102BA1063A008B1EF8 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = 029F270F2BA1063A008B1EF8 /* RxBlocking */; };
+		029F27122BA1063A008B1EF8 /* RxBlocking-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 029F27112BA1063A008B1EF8 /* RxBlocking-Dynamic */; };
+		029F27142BA1063A008B1EF8 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 029F27132BA1063A008B1EF8 /* RxCocoa */; };
+		029F27162BA1063A008B1EF8 /* RxCocoa-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 029F27152BA1063A008B1EF8 /* RxCocoa-Dynamic */; };
+		029F27182BA1063A008B1EF8 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 029F27172BA1063A008B1EF8 /* RxRelay */; };
+		029F271B2BA10697008B1EF8 /* ContactsDaoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029F271A2BA10697008B1EF8 /* ContactsDaoRepository.swift */; };
+		029F271E2BA10736008B1EF8 /* MainScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029F271D2BA10736008B1EF8 /* MainScreenViewModel.swift */; };
+		029F27202BA10761008B1EF8 /* PersonSaveViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029F271F2BA10761008B1EF8 /* PersonSaveViewModel.swift */; };
+		029F27222BA10786008B1EF8 /* PersonDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029F27212BA10786008B1EF8 /* PersonDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +41,10 @@
 		026F41452B9B58F200BA5074 /* DetailPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPerson.swift; sourceTree = "<group>"; };
 		026F41472B9B59A900BA5074 /* Contacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
 		026F414C2B9BC97B00BA5074 /* ContactsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsCell.swift; sourceTree = "<group>"; };
+		029F271A2BA10697008B1EF8 /* ContactsDaoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsDaoRepository.swift; sourceTree = "<group>"; };
+		029F271D2BA10736008B1EF8 /* MainScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewModel.swift; sourceTree = "<group>"; };
+		029F271F2BA10761008B1EF8 /* PersonSaveViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonSaveViewModel.swift; sourceTree = "<group>"; };
+		029F27212BA10786008B1EF8 /* PersonDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +52,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				029F27182BA1063A008B1EF8 /* RxRelay in Frameworks */,
+				029F27162BA1063A008B1EF8 /* RxCocoa-Dynamic in Frameworks */,
+				029F27142BA1063A008B1EF8 /* RxCocoa in Frameworks */,
+				029F27102BA1063A008B1EF8 /* RxBlocking in Frameworks */,
+				029F27122BA1063A008B1EF8 /* RxBlocking-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +97,7 @@
 		026F413E2B9B583F00BA5074 /* data */ = {
 			isa = PBXGroup;
 			children = (
+				029F27192BA10673008B1EF8 /* repo */,
 				026F41412B9B588C00BA5074 /* entity */,
 			);
 			path = data;
@@ -87,6 +106,7 @@
 		026F41402B9B585800BA5074 /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				029F271C2BA10722008B1EF8 /* viewmodel */,
 				026F414B2B9BC95500BA5074 /* tableView */,
 				026F41422B9B589900BA5074 /* views */,
 			);
@@ -119,6 +139,24 @@
 			path = tableView;
 			sourceTree = "<group>";
 		};
+		029F27192BA10673008B1EF8 /* repo */ = {
+			isa = PBXGroup;
+			children = (
+				029F271A2BA10697008B1EF8 /* ContactsDaoRepository.swift */,
+			);
+			path = repo;
+			sourceTree = "<group>";
+		};
+		029F271C2BA10722008B1EF8 /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				029F271D2BA10736008B1EF8 /* MainScreenViewModel.swift */,
+				029F271F2BA10761008B1EF8 /* PersonSaveViewModel.swift */,
+				029F27212BA10786008B1EF8 /* PersonDetailViewModel.swift */,
+			);
+			path = viewmodel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +173,13 @@
 			dependencies = (
 			);
 			name = ContactsApp;
+			packageProductDependencies = (
+				029F270F2BA1063A008B1EF8 /* RxBlocking */,
+				029F27112BA1063A008B1EF8 /* RxBlocking-Dynamic */,
+				029F27132BA1063A008B1EF8 /* RxCocoa */,
+				029F27152BA1063A008B1EF8 /* RxCocoa-Dynamic */,
+				029F27172BA1063A008B1EF8 /* RxRelay */,
+			);
 			productName = ContactsApp;
 			productReference = 026F41272B9B580700BA5074 /* ContactsApp.app */;
 			productType = "com.apple.product-type.application";
@@ -163,6 +208,9 @@
 				Base,
 			);
 			mainGroup = 026F411E2B9B580700BA5074;
+			packageReferences = (
+				029F26FA2BA105E9008B1EF8 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = 026F41282B9B580700BA5074 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -191,9 +239,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				026F412F2B9B580700BA5074 /* MainScreen.swift in Sources */,
+				029F271B2BA10697008B1EF8 /* ContactsDaoRepository.swift in Sources */,
 				026F412B2B9B580700BA5074 /* AppDelegate.swift in Sources */,
 				026F41482B9B59A900BA5074 /* Contacts.swift in Sources */,
 				026F41442B9B58DA00BA5074 /* SavePerson.swift in Sources */,
+				029F27222BA10786008B1EF8 /* PersonDetailViewModel.swift in Sources */,
+				029F271E2BA10736008B1EF8 /* MainScreenViewModel.swift in Sources */,
+				029F27202BA10761008B1EF8 /* PersonSaveViewModel.swift in Sources */,
 				026F412D2B9B580700BA5074 /* SceneDelegate.swift in Sources */,
 				026F41462B9B58F200BA5074 /* DetailPerson.swift in Sources */,
 				026F414D2B9BC97B00BA5074 /* ContactsCell.swift in Sources */,
@@ -419,6 +471,45 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		029F26FA2BA105E9008B1EF8 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		029F270F2BA1063A008B1EF8 /* RxBlocking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 029F26FA2BA105E9008B1EF8 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxBlocking;
+		};
+		029F27112BA1063A008B1EF8 /* RxBlocking-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 029F26FA2BA105E9008B1EF8 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = "RxBlocking-Dynamic";
+		};
+		029F27132BA1063A008B1EF8 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 029F26FA2BA105E9008B1EF8 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		029F27152BA1063A008B1EF8 /* RxCocoa-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 029F26FA2BA105E9008B1EF8 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = "RxCocoa-Dynamic";
+		};
+		029F27172BA1063A008B1EF8 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 029F26FA2BA105E9008B1EF8 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 026F411F2B9B580700BA5074 /* Project object */;
 }

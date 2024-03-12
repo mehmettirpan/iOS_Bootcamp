@@ -15,6 +15,8 @@ class MainScreen: UIViewController{
     
     var contactsList = [Contacts]()
     
+    var viewModel = MainScreenViewModel() // uygulama ilk çalıştığı anda viewModel nesnesi oluşturuldu ve viewmodel içerisindeki MainScreenViewModel nesnesi oluştu şimdi sıra oradaki kodda
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 //        Yukarıdaki searchbar outlet'i ile aşağıdaki fonksiyonu birbirine bağlamak için bu işlemi yaptık
@@ -22,16 +24,14 @@ class MainScreen: UIViewController{
         contactsTableView.delegate = self
         contactsTableView.dataSource = self
         
-        
-        let p1 = Contacts(person_id: UUID(), person_name: "Şevval", person_number: "0 500 100 11 00")
-        let p2 = Contacts(person_id: UUID(), person_name: "Mehmet", person_number: "0 500 101 11 00")
-        let p3 = Contacts(person_id: UUID(), person_name: "Deniz", person_number: "0 500 100 12 43")
-        contactsList.append(p1)
-        contactsList.append(p2)
-        contactsList.append(p3)
+        _ = viewModel.contactsList.subscribe(onNext: {list in
+            self.contactsList = list // listeyi aldın içeriği değiştirdin
+            self.contactsTableView.reloadData() // listeyi güncelle en sonu getir demek
+        })
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        viewModel.contactsUpload() // bu kodun amacı kayıt yaptıktan sonra veri tabanındaki en son kişileri aktarmak
         print("Ana sayfaya geri dönüldü")
     }
 
@@ -53,7 +53,7 @@ class MainScreen: UIViewController{
 extension MainScreen: UISearchBarDelegate {
     //    search bar için fonksiyon her yazdığımızı sonuç verecek bize
         func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-            print("Search Person: \(searchText)")
+            viewModel.search(searchText: searchText)
         }
     
 }
@@ -95,7 +95,7 @@ extension MainScreen: UITableViewDelegate, UITableViewDataSource {
             alert.addAction(cancelAction)
             
             let yesAction = UIAlertAction(title: "Yes", style: .destructive){ action in
-                print("Person delete: \(person.person_id!)")
+                self.viewModel.delete(person_id: person.person_id!)
             }
             
             alert.addAction(yesAction)

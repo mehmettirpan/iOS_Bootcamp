@@ -13,6 +13,8 @@ class SavePerson: UIViewController {
     
     @IBOutlet weak var tfPersonNumber: UITextField!
     
+    var viewModel = PersonSaveViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,13 +22,9 @@ class SavePerson: UIViewController {
     
     @IBAction func saveButton(_ sender: Any) {
         if let ka = tfPersonName.text, let kt = tfPersonNumber.text {
-            save(person_name: ka, person_number: kt)
+            viewModel.save(person_name: ka, person_number: kt)
         }
         
-    }
-    
-    func save (person_name:String, person_number:String){
-        print("Save Person: \(person_name) - \(person_number)")
     }
     
 
