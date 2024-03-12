@@ -10,19 +10,18 @@ import RxSwift
 
 class AnasayfaViewModel {
     var sonuc = BehaviorSubject<String>(value: "0")
+    var mrepo = MatematikRepository()
+    
+    init(){
+        sonuc = mrepo.sonuc
+    }
     
     func toplamaYap(alinanSayi1:String, alinanSayi2:String){
-        if let sayi1 = Int(alinanSayi1), let sayi2 = Int(alinanSayi2){
-            let toplam = sayi1 + sayi2
-            sonuc.onNext(String(toplam)) // tetikleme
-        }
+        mrepo.toplamaYap(alinanSayi1: alinanSayi1, alinanSayi2: alinanSayi2)
     }
     
     func carpmaYap(alinanSayi1:String, alinanSayi2:String){
-        if let sayi1 = Int(alinanSayi1), let sayi2 = Int(alinanSayi2){
-            let carpma = sayi1 * sayi2
-            sonuc.onNext(String(carpma)) // tetikleme
-        }
+        mrepo.carpmaYap(alinanSayi1: alinanSayi1, alinanSayi2: alinanSayi2)
     }
     
 }

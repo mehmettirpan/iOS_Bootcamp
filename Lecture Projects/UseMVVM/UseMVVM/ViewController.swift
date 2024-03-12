@@ -21,6 +21,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // dinleme
         _ = viewModel.sonuc.subscribe(onNext: { s in  // s nin amacı sonuç yani sonucu bize aktarın kısaltımı gibi
             self.labelSonuc.text = String(s)
         })
