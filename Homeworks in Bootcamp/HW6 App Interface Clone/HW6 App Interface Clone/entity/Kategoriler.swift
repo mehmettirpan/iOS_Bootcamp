@@ -19,13 +19,14 @@ class Kategoriler{
         
     }
     
-    init(kategori_id: UUID? = nil, kategori_name: String? = nil, aciklama_name: String? = nil, image: String? = nil) {
+    init(kategori_id: UUID, kategori_name: String, aciklama_name: String, image: String) {
         self.kategori_id = kategori_id
         self.kategori_name = kategori_name
         self.aciklama_name = aciklama_name
         self.image = image
     }
     
+ 
     
     
 }

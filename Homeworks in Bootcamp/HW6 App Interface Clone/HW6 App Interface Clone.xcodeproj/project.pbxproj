@@ -17,6 +17,8 @@
 		0249A5BD2BA76CFC006C4793 /* Kategoriler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0249A5BC2BA76CFC006C4793 /* Kategoriler.swift */; };
 		0249A5C12BA77286006C4793 /* VitrinScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0249A5C02BA77286006C4793 /* VitrinScreen.swift */; };
 		0249A5C32BA772BE006C4793 /* ServislerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0249A5C22BA772BE006C4793 /* ServislerScreen.swift */; };
+		0249A5C52BA77303006C4793 /* BanaOzelScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0249A5C42BA77303006C4793 /* BanaOzelScreen.swift */; };
+		0249A5C72BA77328006C4793 /* IlanVerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0249A5C62BA77328006C4793 /* IlanVerScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		0249A5BC2BA76CFC006C4793 /* Kategoriler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kategoriler.swift; sourceTree = "<group>"; };
 		0249A5C02BA77286006C4793 /* VitrinScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VitrinScreen.swift; sourceTree = "<group>"; };
 		0249A5C22BA772BE006C4793 /* ServislerScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServislerScreen.swift; sourceTree = "<group>"; };
+		0249A5C42BA77303006C4793 /* BanaOzelScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BanaOzelScreen.swift; sourceTree = "<group>"; };
+		0249A5C62BA77328006C4793 /* IlanVerScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IlanVerScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +95,8 @@
 				0249A5A82BA71439006C4793 /* MainScreen.swift */,
 				0249A5C02BA77286006C4793 /* VitrinScreen.swift */,
 				0249A5C22BA772BE006C4793 /* ServislerScreen.swift */,
+				0249A5C42BA77303006C4793 /* BanaOzelScreen.swift */,
+				0249A5C62BA77328006C4793 /* IlanVerScreen.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -169,7 +175,9 @@
 				0249A5BB2BA76755006C4793 /* AramaHucre.swift in Sources */,
 				0249A5BD2BA76CFC006C4793 /* Kategoriler.swift in Sources */,
 				0249A5A92BA71439006C4793 /* MainScreen.swift in Sources */,
+				0249A5C52BA77303006C4793 /* BanaOzelScreen.swift in Sources */,
 				0249A5A52BA71439006C4793 /* AppDelegate.swift in Sources */,
+				0249A5C72BA77328006C4793 /* IlanVerScreen.swift in Sources */,
 				0249A5A72BA71439006C4793 /* SceneDelegate.swift in Sources */,
 				0249A5C12BA77286006C4793 /* VitrinScreen.swift in Sources */,
 				0249A5C32BA772BE006C4793 /* ServislerScreen.swift in Sources */,

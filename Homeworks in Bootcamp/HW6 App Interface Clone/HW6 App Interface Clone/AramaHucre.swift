@@ -12,7 +12,7 @@ class AramaHucre: UITableViewCell {
     
     @IBOutlet weak var kategoriLogo: UIImageView!
     
-    @IBOutlet weak var kategoriLabel: UILabel!
+    @IBOutlet weak var kategoriBaslik: UILabel!
     
     @IBOutlet weak var kategoriDetay: UILabel!
     

@@ -3,7 +3,6 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
-        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -30,10 +29,10 @@
             </objects>
             <point key="canvasLocation" x="1050" y="-1006"/>
         </scene>
-        <!--View Controller-->
+        <!--Vitrin Screen-->
         <scene sceneID="aaI-Rf-kDH">
             <objects>
-                <viewController id="PnV-dm-1rO" sceneMemberID="viewController">
+                <viewController id="PnV-dm-1rO" customClass="VitrinScreen" customModule="HW6_App_Interface_Clone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qvf-lg-cfp">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -61,55 +60,61 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="2y9-Ow-LZ9"/>
                                 </connections>
                             </searchBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="els-Q9-IV7">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="els-Q9-IV7">
                                 <rect key="frame" x="0.0" y="159" width="393" height="610"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="aramaHucre" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="jip-pe-0YN" customClass="AramaHucre" customModule="HW6_App_Interface_Clone" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="393" height="50"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="aramaHucre" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="aramaHucre" id="jip-pe-0YN" customClass="AramaHucre" customModule="HW6_App_Interface_Clone" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jip-pe-0YN" id="3xI-jR-fzm">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="50"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="60"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7jV-Rc-sog">
-                                                    <rect key="frame" x="0.0" y="2.3333333333333321" width="60" height="45.333333333333343"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
                                                     <color key="tintColor" systemColor="systemYellowColor"/>
-                                                    <imageReference key="image" image="house.circle.fill" catalog="system" symbolScale="small"/>
                                                 </imageView>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="lzJ-1b-BKA">
-                                                    <rect key="frame" x="60" y="0.0" width="333" height="50"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="-15" translatesAutoresizingMaskIntoConstraints="NO" id="lzJ-1b-BKA">
+                                                    <rect key="frame" x="60" y="0.0" width="303" height="60"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Emlak" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Rc-fc-5wH">
-                                                            <rect key="frame" x="0.0" y="0.0" width="333" height="33"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emlak" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Rc-fc-5wH">
+                                                            <rect key="frame" x="0.0" y="0.0" width="303" height="37.666666666666664"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Konut, İş yeri, Arsa, Konut Projeleri, Bina, DevreMülk" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M4p-wl-9tg">
-                                                            <rect key="frame" x="0.0" y="33" width="333" height="17"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Konut, İş yeri, Arsa, Konut Projeleri, Bina, DevreMülk" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M4p-wl-9tg">
+                                                            <rect key="frame" x="0.0" y="22.666666666666668" width="303" height="37.333333333333329"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
                                                 </stackView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tyt-0W-zMx">
+                                                    <rect key="frame" x="363" y="0.0" width="30" height="60"/>
+                                                </imageView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="lzJ-1b-BKA" secondAttribute="trailing" id="Cjj-4a-aAo"/>
                                                 <constraint firstItem="lzJ-1b-BKA" firstAttribute="top" secondItem="3xI-jR-fzm" secondAttribute="top" id="KX9-rc-ZoO"/>
                                                 <constraint firstItem="7jV-Rc-sog" firstAttribute="leading" secondItem="3xI-jR-fzm" secondAttribute="leading" id="SMN-IU-IS7"/>
+                                                <constraint firstAttribute="bottom" secondItem="tyt-0W-zMx" secondAttribute="bottom" id="WR8-Cd-9Yf"/>
                                                 <constraint firstItem="lzJ-1b-BKA" firstAttribute="centerY" secondItem="3xI-jR-fzm" secondAttribute="centerY" id="XH9-So-488"/>
+                                                <constraint firstItem="tyt-0W-zMx" firstAttribute="leading" secondItem="lzJ-1b-BKA" secondAttribute="trailing" id="bDG-z8-pWc"/>
                                                 <constraint firstItem="lzJ-1b-BKA" firstAttribute="leading" secondItem="7jV-Rc-sog" secondAttribute="trailing" id="bx7-xo-bbp"/>
                                                 <constraint firstItem="lzJ-1b-BKA" firstAttribute="leading" secondItem="3xI-jR-fzm" secondAttribute="leading" constant="60" id="cpF-xg-weC"/>
+                                                <constraint firstAttribute="trailing" secondItem="lzJ-1b-BKA" secondAttribute="trailing" constant="30" id="g0b-ny-PBc"/>
+                                                <constraint firstItem="tyt-0W-zMx" firstAttribute="top" secondItem="3xI-jR-fzm" secondAttribute="top" id="oMq-Dq-z0E"/>
                                                 <constraint firstAttribute="bottom" secondItem="lzJ-1b-BKA" secondAttribute="bottom" id="rXe-fi-z7J"/>
+                                                <constraint firstAttribute="trailing" secondItem="tyt-0W-zMx" secondAttribute="trailing" id="vBT-aH-dYc"/>
                                                 <constraint firstAttribute="bottom" secondItem="7jV-Rc-sog" secondAttribute="bottom" id="wG2-GA-7NW"/>
                                                 <constraint firstItem="7jV-Rc-sog" firstAttribute="top" secondItem="3xI-jR-fzm" secondAttribute="top" id="zfW-F5-9wd"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="kategoriBaslik" destination="3Rc-fc-5wH" id="XTX-NX-V9F"/>
                                             <outlet property="kategoriDetay" destination="M4p-wl-9tg" id="3FQ-Tg-roc"/>
-                                            <outlet property="kategoriLabel" destination="3Rc-fc-5wH" id="6Dr-7A-01X"/>
                                             <outlet property="kategoriLogo" destination="7jV-Rc-sog" id="efZ-5V-dgZ"/>
                                         </connections>
                                     </tableViewCell>
@@ -129,11 +134,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Arama" id="ydU-Jf-gH4">
-                        <barButtonItem key="leftBarButtonItem" enabled="NO" title="Item" image="sahibinden" id="DBV-Gu-8W7"/>
+                        <barButtonItem key="leftBarButtonItem" enabled="NO" title="Item" id="DBV-Gu-8W7"/>
                         <barButtonItem key="rightBarButtonItem" title="camera" image="camera.shutter.button" catalog="system" id="OaT-aq-MCI"/>
                     </navigationItem>
                     <connections>
                         <outlet property="aramaTableView" destination="els-Q9-IV7" id="oa1-kw-cKE"/>
+                        <outlet property="item" destination="DBV-Gu-8W7" id="akV-zl-Ql2"/>
+                        <outlet property="searchBar" destination="6XN-Y4-n5G" id="El6-C4-vWb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -227,10 +234,10 @@
             </objects>
             <point key="canvasLocation" x="2056" y="-27"/>
         </scene>
-        <!--View Controller-->
+        <!--Bana Ozel Screen-->
         <scene sceneID="cBs-CD-ufb">
             <objects>
-                <viewController id="GM3-NZ-ard" sceneMemberID="viewController">
+                <viewController id="GM3-NZ-ard" customClass="BanaOzelScreen" customModule="HW6_App_Interface_Clone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mj3-L7-H5p">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -243,10 +250,10 @@
             </objects>
             <point key="canvasLocation" x="2992" y="775"/>
         </scene>
-        <!--View Controller-->
+        <!--Servisler Screen-->
         <scene sceneID="Vwo-Kj-BGX">
             <objects>
-                <viewController id="az2-gv-Wc9" sceneMemberID="viewController">
+                <viewController id="az2-gv-Wc9" customClass="ServislerScreen" customModule="HW6_App_Interface_Clone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gef-MC-Eiw">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -259,10 +266,10 @@
             </objects>
             <point key="canvasLocation" x="2056" y="775"/>
         </scene>
-        <!--View Controller-->
+        <!--Ilan Ver Screen-->
         <scene sceneID="6Hp-eT-uNg">
             <objects>
-                <viewController id="yDE-El-MVC" sceneMemberID="viewController">
+                <viewController id="yDE-El-MVC" customClass="IlanVerScreen" customModule="HW6_App_Interface_Clone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="r0D-y7-fRl">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -279,11 +286,9 @@
     <resources>
         <image name="arrow.circlepath" catalog="system" width="128" height="112"/>
         <image name="camera.shutter.button" catalog="system" width="128" height="108"/>
-        <image name="house.circle.fill" catalog="system" width="128" height="123"/>
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="plus.circle.fill" catalog="system" width="128" height="123"/>
-        <image name="sahibinden" width="40" height="40"/>
         <image name="sparkles" catalog="system" width="115" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
